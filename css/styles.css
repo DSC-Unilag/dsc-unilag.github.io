@@ -178,6 +178,11 @@ p {
   vertical-align: middle;
 }
 
+#loader {
+  margin-top: 10px;
+  display: none
+}
+
 #loading {
   position: fixed;
   left: 0;
@@ -487,6 +492,27 @@ p {
 .course-card{
   width: 21rem;
   margin: 0 auto 20px;
+}
+
+.message-wrapper {
+  flex-direction: column;
+  color: #637282;
+  text-align: center;
+}
+
+.message-wrapper .message-text {
+  font-size: 1rem;
+  color: #637282;
+  font-weight: 200;
+  text-align: center;
+}
+
+.spinner-wrapper, .message-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
 }
 
 /*project card syling*/
@@ -819,13 +845,6 @@ border-radius: 25px;
 
 .navbar-brand {
   z-index: 200;
-
-}
-
-#header_title{
-  margin:0;
-  z-index: 200;
-  font-weight: 200;
 }
 
 .navbar-collapse {
@@ -2158,4 +2177,40 @@ hr{
 }
 .err-p{
   font-size: 60px;
+}
+
+.tab{
+  display: none;
+}
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+  background-color:#2F5BE7;
+}
+
+.step-button {
+  padding: 10px 12px;
+}
+input.invalid {
+  background-color: #ffdddd;
+}
+select.invalid {
+  background-color: #ffdddd;
+}
+input.form-control {
+  padding: 15px 20px;
+}
+select.form-control {
+  height: 50px;
+  padding: 5px 20px;
 }
