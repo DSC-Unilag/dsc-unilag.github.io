@@ -1026,7 +1026,7 @@
             </div>
         </div>
         <div class="mt-40 text-center">
-            <a href="mailto:dscuniversity.com" class="hero-button">Send us an email</a>
+            <a href="mailto:dscunilag@gmail.com" class="hero-button">Send us an email</a>
         </div>
     </div>
 </section>
@@ -1037,7 +1037,7 @@
             <div class="col-md-4 col-12">
                 <div class="footer-widget first-of-footer-widget">
                     <img data-src="images/footer-logo.png" class="logo-sm mb-10" alt="DSC University of Lagos footer logo">
-                    <p>Copyright &copy; 2019. All Rights Reserved.</p>
+                    <p>Copyright &copy;  <span id="date"></span>. All Rights Reserved.</p>
                     <span>Feel free to drop us an email at </span>
                     <a href="mailto:blessyn2hope@gmail.com">The lead</a>
                     <ul class="social-list__inline mt-10">
@@ -1160,6 +1160,11 @@
             }
         );
     }
+
+
+    // Adding dynamic date to pages
+    document.getElementById("date").innerHTML = new Date().getFullYear()
+
 </script>
 <script src="js/vendors/pace.js"></script>
 <script src="js/vendors/jquery.min.js"></script>
