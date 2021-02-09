@@ -90,6 +90,7 @@
     <h2 class="py-5 text-center">Build actual solutions to problems in different categories</h2>
 </section>
 
+
 <section class="segment py-4 d-flex segment-right">
     <div class="text px-3 text-right text-dark">
         <p class="display-4">Team up</p>
@@ -137,7 +138,7 @@
             <div class="col-md-4 col-12">
                 <div class="footer-widget first-of-footer-widget">
                     <img src="images/footer-logo.png" class="logo-sm mb-10" alt="Image">
-                    <p>Copyright &copy; 2019. All Rights Reserved.</p>
+                    <p>Copyright &copy; <span id="date"></span>. All Rights Reserved.</p>
                     <span>Feel free to drop us an email at </span>
                     <a href="mailto:team@dsc.scuniversityname.org">team@dscuniversityname.org</a>
                     <ul class="social-list__inline mt-10">
@@ -219,6 +220,10 @@
     </div>
 </footer>
 <a href="#" id="scroll" style="display: none;"><i class="fas fa-angle-up"></i></a>
+<script>
+// Adding dynamic date to pages
+document.getElementById("date").innerHTML = new Date().getFullYear()
+</script>
 <script src="js/vendors/pace.js"></script>
 <script src="js/vendors/jquery.min.js"></script>
 <script src="js/vendors/bootstrap.bundle.min.js"></script>
